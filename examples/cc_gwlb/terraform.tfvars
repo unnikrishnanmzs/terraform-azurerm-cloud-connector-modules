@@ -103,6 +103,13 @@
 
 
 #####################################################################################################################
+##### Custom Cloud Connector Source Image (Azure Compute Gallery)                          #####
+#####################################################################################################################
+
+ccvm_source_image_id = "/subscriptions/1b1582c0-555a-44fa-b37c-7d3588edb648/resourceGroups/imgcopy_rg/providers/Microsoft.Compute/galleries/devCopyGallery/images/cczs54-new/versions/3.0.0"
+
+
+#####################################################################################################################
 ##### Post-Apply: Chaining the GWLB to your existing Public Load Balancer (Consumer)     #####
 #####                                                                                     #####
 ##### After terraform apply, take the gwlb_frontend_ip_config_id output value and        #####

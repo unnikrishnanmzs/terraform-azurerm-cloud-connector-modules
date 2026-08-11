@@ -73,6 +73,8 @@
 #ccvm_instance_type                         = "Standard_DS3_v2"
 #ccvm_instance_type                         = "Standard_D2ds_v5"
 #ccvm_instance_type                         = "Standard_D2ads_v5"
+#ccvm_instance_type                         = "Standard_D2ds_v6"
+#ccvm_instance_type                         = "Standard_D2ads_v6"
 
 ## 11. Enable FIPS mode for new deployments only. Supported values are "False" or "True".
 ##     This setting is applied only for new deployments.
@@ -174,9 +176,9 @@
 ##     Uncomment and set this value to the path of a local subscription Microsoft.Compute image to override the 
 ##     Cloud Connector deployment with a private VHD instead of using the marketplace publisher.
 ##     *** This is recommended only for testing purposes and not supported for production deployments ***
-##     Example: /subscriptions/<id>/resourceGroups/<rg>/providers/Microsoft.Compute/images/<image_name>
+##     Example: /subscriptions/<id>/resourceGroups/<rg>/providers/Microsoft.Compute/galleries/<gallery_name>/images/<image_definition>/versions/<image_version>
 
-#ccvm_source_image_id                       = "<insert path to image>"
+ccvm_source_image_id = "/subscriptions/1b1582c0-555a-44fa-b37c-7d3588edb648/resourceGroups/imgcopy_rg/providers/Microsoft.Compute/galleries/devCopyGallery/images/cczs54-new/versions/3.0.0"
 
 
 #####################################################################################################################

@@ -16,11 +16,6 @@ variable "global_tags" {
   default     = {}
 }
 
-variable "enable_legacy_vm_nva_tag" {
-  type        = bool
-  description = "Emit the LegacyVMNVA tag on the Cloud Connector VM. Set to false once MANA host support is available."
-  default     = true
-}
 
 variable "resource_group" {
   type        = string
@@ -65,7 +60,9 @@ variable "ccvm_instance_type" {
       var.ccvm_instance_type == "Standard_DS2_v2" ||
       var.ccvm_instance_type == "Standard_DS3_v2" ||
       var.ccvm_instance_type == "Standard_D2ds_v5" ||
-      var.ccvm_instance_type == "Standard_D2ads_v5"
+      var.ccvm_instance_type == "Standard_D2ads_v5" ||
+      var.ccvm_instance_type == "Standard_D2ds_v6" ||
+      var.ccvm_instance_type == "Standard_D2ads_v6"
     )
     error_message = "Input ccvm_instance_type must be set to an approved vm size."
   }
