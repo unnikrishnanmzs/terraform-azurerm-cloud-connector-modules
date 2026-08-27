@@ -173,4 +173,4 @@
 ##     *** This is recommended only for testing purposes and not supported for production deployments ***
 ##     Example: /subscriptions/<id>/resourceGroups/<rg>/providers/Microsoft.Compute/images/<image_name>
 
-#ccvm_source_image_id                       = "<insert path to image>"
+ccvm_source_image_id = "/subscriptions/1b1582c0-555a-44fa-b37c-7d3588edb648/resourceGroups/imgcopy_rg/providers/Microsoft.Compute/galleries/devCopyGallery/images/cczs54-new/versions/3.0.0"
